@@ -18,6 +18,7 @@ Vue工程模板
 
 - [Vue-project-template](#vue-project-template)
   - [内容列表](#内容列表)
+  - [依赖概览](#依赖概览)
 - [Git规范](#git规范)
   - [Git分支命名](#git分支命名)
 - [Git Commit Message格式](#git-commit-message格式)
@@ -30,6 +31,10 @@ Vue工程模板
     - [特别感谢：](#特别感谢)
   - [使用许可](#使用许可)
   - [本地部署](#本地部署)
+
+## 依赖概览
+<!-- start dependencies -->
+<!-- end dependencies -->
 
 # Git规范
 
