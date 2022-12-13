@@ -18,6 +18,7 @@ Vue工程模板
 
 - [Vue-project-template](#vue-project-template)
   - [内容列表](#内容列表)
+  - [代码行数：](#代码行数)
   - [依赖概览](#依赖概览)
 - [Git规范](#git规范)
   - [Git分支命名](#git分支命名)
@@ -32,6 +33,8 @@ Vue工程模板
   - [使用许可](#使用许可)
   - [本地部署](#本地部署)
 
+## 代码行数：
+![](https://raw.githubusercontent.com/Kherrisan/cloc-badge-action/master/cloc.svg)
 ## 依赖概览
 <!-- start dependencies -->
 <!-- end dependencies -->
