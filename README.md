@@ -34,7 +34,7 @@ Vue工程模板
   - [本地部署](#本地部署)
 
 ## 代码行数：
-![](https://raw.githubusercontent.com/Kherrisan/cloc-badge-action/master/cloc.svg)
+![](https://img.shields.io/badge/JSON-22049-green?style=for-the-badge)
 ## 依赖概览
 <!-- start dependencies -->
 <!-- end dependencies -->
