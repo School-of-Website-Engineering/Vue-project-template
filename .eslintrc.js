@@ -24,7 +24,7 @@ module.exports = {
 
 		"generator-star-spacing": 0, // allow async-await
 
-		"no-unused-vars": "error", // disabled no ununsed var  `V1.1`
+		"no-unused-vars": "warn", // disabled no ununsed var  `V1.1`
 
 		"no-debugger": process.env.NODE_ENV === "production" ? "error" : "off", // no use debugger in production
 
