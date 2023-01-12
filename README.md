@@ -9,6 +9,9 @@
 ![](https://img.shields.io/badge/Node-%20%5E16.18.0-brightgreen)
 ![](https://img.shields.io/badge/npm-%5E8.19.2-blue)
 
+<!-- start dependencies -->
+<!-- end dependencies -->
+
 [LiveDemo]()
 
 ---

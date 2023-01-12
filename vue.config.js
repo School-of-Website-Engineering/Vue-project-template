@@ -2,12 +2,10 @@
 
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
-	lintOnSave           : false,
 	transpileDependencies: true
 });
 
 module.exports = {
-	lintOnSave: false,
 	publicPath: "/Vue-project-template/",
 	// publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
 
