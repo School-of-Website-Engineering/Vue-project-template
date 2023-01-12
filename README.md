@@ -75,8 +75,9 @@ Vue工程模板
 
 - [Rosy-DR-Code-Ling](https://github.com/School-of-Website-Engineering/Rosy-DR-Code-Ling) — 💌 Rosy-DR-Code-Ling的Web页面
 - [E-commerce](https://github.com/Galaxy-Wish-Star/E-commerce) — 助农电商项目-Vue
-- [magic-ling-pixel-dungeon](https://github.com/AnsdoShip/Magic-Ling-Pixel-Dungeon) — 魔绫像素地牢
-- [SkyHell](https://github.com/LingASDJ/SkyHell) — 天狱之境-TR
+- [Rural-revitalization-agricultural-assistance-services](https://github.com/Galaxy-Wish-Star/Rural-revitalization-agricultural-assistance-services) — 魔绫像素地牢
+- [Back-end-management-system-E-commerce](https://github.com/School-of-Website-Engineering/Back-end-management-system-E-commerce) — Vue2+Element-UI 电商后台管理系统
+
 ## 维护者
 
 [@mason369](https://github.com/mason369)
@@ -144,8 +145,7 @@ JavaScript 和 Web 开发人员的最佳选择，具有几乎可支持任何编�
 ## 本地部署
 
 ``` bash
-//出于Github缓存和最新依赖考虑，我们默认不提供node_modules的文件夹以及依赖项
-//然后安装依赖，通过以下命令
+//安装依赖，通过以下命令
 # npm install
 
 //serve 服务器测试

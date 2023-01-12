@@ -104,11 +104,6 @@
 </template>
 
 <script>
-import { Script } from "@/mixin";
-export default {
-	name  : "Home",
-	mixins: [Script]
-};
 </script>
 
 <style lang="css" scoped></style>
