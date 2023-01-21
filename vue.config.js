@@ -6,10 +6,10 @@ module.exports = defineConfig({
 });
 
 module.exports = {
-	publicPath: "/Vue-project-template/",
+	publicPath: "/Heimatoutiao/",
 	// publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
 
-	// //代理服务器
+	//代理服务器
 	// devServer: {
 	// 	proxy: {
 	// 		"/api": {
