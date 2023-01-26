@@ -7,6 +7,7 @@ module.exports = defineConfig({
 
 module.exports = {
 	publicPath: "/Vue-project-template/",
+	lintOnSave: false,
 	// publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
 
 	//代理服务器
