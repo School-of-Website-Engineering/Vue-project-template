@@ -1,24 +1,7 @@
-// vue.config.js
-
 const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-	transpileDependencies: true
-});
 
-module.exports = {
+module.exports = defineConfig({
+	transpileDependencies: true, // 设置依赖文件是否被转译
 	publicPath: "/Vue-project-template/",
 	lintOnSave: false,
-	// publicPath: process.env.NODE_ENV === "production" ? "./" : "/",
-
-	//代理服务器
-	// devServer: {
-	// 	proxy: {
-	// 		"/api": {
-	// 			target      : "http://gmall-h5-api.atguigu.cn", //代理转发路径
-	// 			pathRewrites: { "^/api": "" }, //匹配字符串
-	// 			ws          : true, //支持websocket
-	// 			changeOrigin: true //跨域
-	// 		}
-	// 	}
-	// }
-};
+});
