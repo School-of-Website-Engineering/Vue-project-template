@@ -7,7 +7,7 @@
 [![](https://img.shields.io/crates/l/s)](https://img.shields.io/crates/l/s)
 ![](https://img.shields.io/badge/Vue-%5E2.7.14-brightgreen)
 ![](https://img.shields.io/badge/Node-%20%5E16.18.0-brightgreen)
-![](https://img.shields.io/badge/npm-%5E8.19.2-blue)
+![](https://img.shields.io/badge/npm-%5E9.5.1-blue)
 
 <!-- start dependencies -->
 <!-- end dependencies -->

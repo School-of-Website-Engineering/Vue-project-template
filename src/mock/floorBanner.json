@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "imgUrl": "images/云南雪莲果.jpg",
+    "name": "云南雪莲果",
+    "activity": "满299减40"
+  },
+  {
+    "id": "2",
+    "imgUrl": "images/兴城多宝鱼.jpg",
+    "name": "美味兴城多宝鱼",
+    "activity": "满199减199"
+
+  },
+  {
+    "id": "3",
+    "imgUrl": "images/四川韭菜.jpg",
+    "name": "美味四川韭菜",
+    "activity": "满1减40"
+  },
+  {
+    "id": "4",
+    "imgUrl": "images/新疆哈密瓜.jpg",
+    "name": "新疆哈密瓜",
+    "activity": "满99减1230"
+  }
+]
