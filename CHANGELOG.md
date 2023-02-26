@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/School-of-Website-Engineering/Vue-project-template/compare/v1.0.1...v1.0.2) (2023-02-26)
+
+
+### update
+
+* 更新目录结构,添加模块 ([90db384](https://github.com/School-of-Website-Engineering/Vue-project-template/commit/90db384f2160c4fa0a369194762791b3cd6f6601))
+
 ## [1.0.1](https://github.com/School-of-Website-Engineering/Vue-project-template/compare/v1.0.0...v1.0.1) (2023-01-22)
 
 
