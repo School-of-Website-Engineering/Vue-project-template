@@ -25,5 +25,16 @@ module.exports = defineConfig({
 				threadPool: happyThreadPool
 			})
 		]
+	},
+	// 代理服务器
+	devServer: {
+		proxy: {
+			"/api": {
+				target      : "http://localhost:3000",
+				changeOrigin: true,
+				pathRewrite : {"^/api": ""},
+				changeOrigin: true
+			}
+		}
 	}
 });

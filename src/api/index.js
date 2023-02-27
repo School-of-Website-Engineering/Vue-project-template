@@ -1,6 +1,7 @@
 //api统一管理
-import requests from "./request";
+import request from "./request";
 //引入mock
 import mockRequest from "./mockRequest";
-//引入后端接口
-// import localRequest from "./localRequest";
+
+export const getData = () => request.get("/getData", { params: { id: 1 } });
+export const postData = () => request.post("/postData", { params: { id: 1 } });

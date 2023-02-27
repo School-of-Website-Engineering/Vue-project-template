@@ -7,6 +7,10 @@ import router from "./router";
 import "./assets/scss/global.scss";
 //引入MockServer.js----mock数据
 import "@/mock/mockServe";
+//引入Toast插件
+import Toast from "@/components/Toast";
+// eslint-disable-next-line vue/multi-word-component-names
+Vue.component("Toast", Toast);
 
 new Vue({
 	//全局事件总线$bus配置

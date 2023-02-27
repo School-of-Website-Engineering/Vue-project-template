@@ -1,44 +1,70 @@
-//对axios进行二次封装
+// 1.引入axios，nprogress，toast组件
 import axios from "axios";
-//引入进度条插件
-import nprogress from "nprogress";
-//引入进度条样式
-import "/node_modules/nprogress/nprogress.css";
-//在当前模块中引store
-import store from "@/store";
-export const requests = axios.create({
-	timeout: 7000, // 请求超时时间
-	baseURL: "/api",
-	headers: { "Content-Type": "application/json;charset=UTF-8" }
+import NProgress from "nprogress";
+import Toast from "@/components/Toast";
+
+// 2.定义 axios 实例
+const apiAxios = axios.create({
+	timeout          : 15000,
+	headers          : { "Content-Type": "application/json;charset=UTF-8" },
+	responseType     : "json",
+	// q:为什么这里的baseURL要加上/api？因为在vue.config.js中设置了代理服务器，所以这里的baseURL要加上/api
+	baseURL          : "/api",
+	transformResponse: [
+		function(data) {
+			try {
+				data = JSON.parse(data);
+			}
+			catch (e) {
+				console.log(e);
+			}
+			return data;
+		}
+	]
 });
 
-//请求拦截器
-requests.interceptors.request.use((config) => {
-	if (store.state.detail.uuid_token) {
-		//请求头添加一个字段:和后端商量
-		config.headers.userTempId = store.state.detail.uuid_token;
-	}
-	//需要携带token带给服务器
-	if (store.state.user.token) {
-		config.headers.token = store.state.user.token;
-	}
-	//进度条开始
-	nprogress.start();
-	return config;
-});
-
-//响应拦截器
-requests.interceptors.response.use(
-	(res) => {
-		//成功的回调函数
-		//进度条结束
-		nprogress.done();
-		return res.data;
+// 3.添加请求拦截器
+apiAxios.interceptors.request.use(
+	(config) => {
+		NProgress.start();
+		return config;
 	},
-	(Error) => {
-		//失败的回调函数
-		return Promise.reject(new Error("faile"));
+	(error) => {
+		NProgress.done();
+		return Promise.reject(error);
 	}
 );
 
-export default requests;
+// 4.添加响应拦截器
+apiAxios.interceptors.response.use(
+	(response) => {
+		NProgress.done();
+		return response;
+	},
+	(error) => {
+		// 对响应的常见错误码提示进行封装,使用策略模式优化
+		const errorHandle = {
+			400: "请求错误",
+			401: "未授权，请登录",
+			403: "拒绝访问",
+			404: `请求地址出错: ${error.response.config.url}`,
+			408: "请求超时",
+			500: "服务器内部错误",
+			501: "服务未实现",
+			502: "网关错误",
+			503: "服务不可用",
+			504: "网关超时",
+			505: "HTTP版本不受支持"
+		};
+		error.message = errorHandle[error.response.status] || "未知错误";
+
+		NProgress.done();
+		// q:在这里使用Toast组件，为什么会报错？
+		// a:因为Toast组件是在main.js中注册的，而这里是在request.js中使用的，所以会报错
+		// 解决办法：将Toast组件封装成一个插件，然后在main.js中注册插件
+		Toast.methods.show("error", `${error.message}`);
+		return Promise.reject(error);
+	}
+);
+// 5.导出axios实例
+export default apiAxios;
