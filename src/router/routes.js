@@ -8,7 +8,9 @@ export default [
 	{
 		path     : "/Header",
 		component: () =>
-			import(/* webpackChunkName: "login_home_welcome" */ "@/components/Header/Header.vue"),
+			import(
+				/* webpackChunkName: "login_home_welcome" */ "@/components/Header/Header.vue"
+			),
 		name: "Header"
-	},
+	}
 ];

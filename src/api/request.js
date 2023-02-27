@@ -9,7 +9,7 @@ import store from "@/store";
 export const requests = axios.create({
 	timeout: 7000, // 请求超时时间
 	baseURL: "/api",
-	headers: { "Content-Type": "application/json;charset=UTF-8" },
+	headers: { "Content-Type": "application/json;charset=UTF-8" }
 });
 
 //请求拦截器
@@ -38,7 +38,7 @@ requests.interceptors.response.use(
 	(Error) => {
 		//失败的回调函数
 		return Promise.reject(new Error("faile"));
-	},
+	}
 );
 
 export default requests;
