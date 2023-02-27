@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/School-of-Website-Engineering/Vue-project-template/compare/v1.0.2...v1.1.0) (2023-02-27)
+
+
+### Features
+
+* 添加性能优化插件 ([f00c49d](https://github.com/School-of-Website-Engineering/Vue-project-template/commit/f00c49d92f3675e56f8cca38912f3467698d226e))
+
 ## [1.0.2](https://github.com/School-of-Website-Engineering/Vue-project-template/compare/v1.0.1...v1.0.2) (2023-02-26)
 
 
