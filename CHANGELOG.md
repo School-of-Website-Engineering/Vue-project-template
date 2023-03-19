@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.2](https://github.com/School-of-Website-Engineering/Vue-project-template/compare/v1.2.1...v1.2.2) (2023-03-19)
+
+
+### CI
+
+* Update .deepsource.toml ([776ac86](https://github.com/School-of-Website-Engineering/Vue-project-template/commit/776ac86227f27c38028b950a2aa62fed932c74f7))
+* Update .deepsource.toml ([a2237cf](https://github.com/School-of-Website-Engineering/Vue-project-template/commit/a2237cfa194e07509b1913cf94d46eba23c73b7f))
+
 ## [1.2.1](https://github.com/School-of-Website-Engineering/Vue-project-template/compare/v1.2.0...v1.2.1) (2023-03-19)
 
 
