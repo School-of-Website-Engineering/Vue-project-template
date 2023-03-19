@@ -13,11 +13,11 @@ import Toast from "@/components/Toast";
 Vue.component("Toast", Toast);
 
 new Vue({
-	//全局事件总线$bus配置
-	beforeCreate() {
-		Vue.prototype.$bus = this;
-	},
-	store,
-	router,
-	render: (h) => h(App)
+  //全局事件总线$bus配置
+  beforeCreate() {
+    Vue.prototype.$bus = this;
+  },
+  store,
+  router,
+  render: (h) => h(App),
 }).$mount("#app");
