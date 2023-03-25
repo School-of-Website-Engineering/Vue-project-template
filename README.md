@@ -16,6 +16,11 @@
 [LiveDemo]()
 
 ---
+DeepSource 趋势线：
+
+[![DeepSource](https://deepsource.io/gh/School-of-Website-Engineering/Vue-project-template.svg/?label=active+issues&show_trend=true&token=y_ZjbP8TmVGwwkuKPdl67NZO)](https://deepsource.io/gh/School-of-Website-Engineering/Vue-project-template/?ref=repository-badge)
+
+---
 
 ## 项目简介
 Vue-project-template 为了方便开发者快速搭建 Vue2.x 项目，提供了一套完整的项目模板，包括了项目的基础配置、目录结构、依赖管理、代码规范、Git 规范等。此模板适用于 Vue2.x 项目的开发，可以快速搭建项目，提高开发效率。
