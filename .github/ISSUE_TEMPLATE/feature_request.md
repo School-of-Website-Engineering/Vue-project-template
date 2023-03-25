@@ -1,10 +1,9 @@
 ---
 name: 功能请求
 about: 为此项目提出建议
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 **您的功能请求是否与问题有关？请描述。**
