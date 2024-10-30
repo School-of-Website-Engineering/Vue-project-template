@@ -9,42 +9,40 @@ let originPush = VueRouter.prototype.push;
 let originReplace = VueRouter.prototype.replace;
 
 //重写VueRouter.prototype身上的push方法
-VueRouter.prototype.push = function(location, resolve, reject) {
-	if (reject && resolve) {
-		originPush.call(this, location, resolve, reject);
-	}
-	else {
-		originPush.call(
-			this,
-			location,
-			() => {},
-			() => {}
-		);
-	}
+VueRouter.prototype.push = function (location, resolve, reject) {
+  if (reject && resolve) {
+    originPush.call(this, location, resolve, reject);
+  } else {
+    originPush.call(
+      this,
+      location,
+      () => {},
+      () => {},
+    );
+  }
 };
 
 //重写VueRouter.prototype身上的replace方法
-VueRouter.prototype.replace = function(location, resolve, reject) {
-	if (reject && resolve) {
-		originReplace.call(this, location, resolve, reject);
-	}
-	else {
-		originReplace.call(
-			this,
-			location,
-			() => {},
-			() => {}
-		);
-	}
+VueRouter.prototype.replace = function (location, resolve, reject) {
+  if (reject && resolve) {
+    originReplace.call(this, location, resolve, reject);
+  } else {
+    originReplace.call(
+      this,
+      location,
+      () => {},
+      () => {},
+    );
+  }
 };
 
 const router = new VueRouter({
-	routes,
-	scrollBehavior() {
-		return { y: 0 };
-	},
-	base: process.env.BASE_URL,
-	mode: "hash"
+  routes,
+  scrollBehavior() {
+    return { y: 0 };
+  },
+  base: process.env.BASE_URL,
+  mode: "hash",
 });
 
 export default router;
